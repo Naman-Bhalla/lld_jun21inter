@@ -40,6 +40,15 @@ public class StudentCopy {
             return this;
         }
 
+        public StudentCopy clone(StudentCopy student) {
+            StudentCopy studentCopy = new StudentCopy();
+            studentCopy.name = student.name;
+            studentCopy.age = student.age;
+            studentCopy.batch = student.batch;
+
+            return studentCopy;
+        }
+
         public StudentCopy build() {
             if (student.age < 18) {
                 throw new InvalidParameterException();
@@ -53,9 +62,7 @@ public class StudentCopy {
                 throw new RuntimeException("Phone number doen't exist");
             }
 
-            StudentCopy student2 = student;
-
-            return student2;
+            return clone(student);
         }
     }
 }

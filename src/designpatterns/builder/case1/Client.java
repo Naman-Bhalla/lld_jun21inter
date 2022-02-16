@@ -6,28 +6,35 @@ import java.util.Map;
 public class Client {
 
     public static void main(String[] args) {
-//        Map<ParamValues, Object> mp = new HashMap<>();
-//        mp.put(ParamValues.name, "naman");
-//        mp.put(ParamValues.age, 18);
+////        Map<ParamValues, Object> mp = new HashMap<>();
+////        mp.put(ParamValues.name, "naman");
+////        mp.put(ParamValues.age, 18);
+//
+//        StudentHelper helper = new StudentHelper();
+//        helper.age = 18;
+//        helper.name = "Naman";
+//
+//        Student student = new Student(helper);
+//
+//
+//        Student.StudentBuilder s = Student.getBuilder()
+//                .setAge(18)
+//                .setName("Naman")
+//                .setPhone("1234")
+//                .setBatch("Aug21");
+//
+//        Student s1 = s.build();
+//
+//        s.setName("Anmol");
+//        Student s2 = s.build();
 
-        StudentHelper helper = new StudentHelper();
-        helper.age = 18;
-        helper.name = "Naman";
+        StudentCopy.StudentBuilder builder = StudentCopy.getBuilder().
+                setAge(18)
+                .setName("naman")
+                .setPhone("1234");
 
-        Student student = new Student(helper);
-
-
-        Student.StudentBuilder s = Student.getBuilder()
-                .setAge(18)
-                .setName("Naman")
-                .setPhone("1234")
-                .setBatch("Aug21");
-
-        Student s1 = s.build();
-
-        s.setName("Anmol");
-        Student s2 = s.build();
-
+        StudentCopy s1 = builder.build();
+        StudentCopy s2 = builder.build();
 
     }
 }

@@ -11,6 +11,6 @@ public class Client {
 //        d1.dbUrl = "psql://";
 //        d1.password = "abcde";
 
-        System.out.println(d2.password);
+//        System.out.println(d2.password);
     }
 }
