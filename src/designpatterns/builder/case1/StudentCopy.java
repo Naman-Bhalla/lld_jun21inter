@@ -20,6 +20,7 @@ public class StudentCopy {
     public static class StudentBuilder {
         private StudentCopy student = new StudentCopy();
 
+
         public StudentBuilder setName(String name) {
             student.name = name;
             return this;
