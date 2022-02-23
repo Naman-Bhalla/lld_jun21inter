@@ -17,3 +17,10 @@ public class AndroidFlutterExecutorUIComponentFactory implements FlutterExecutor
         return null;
     }
 }
+
+// Factory.getInstanceOfType(type) {
+//   switch()
+// }
+// Factory.getButto()
+// Factory.getList();
+
